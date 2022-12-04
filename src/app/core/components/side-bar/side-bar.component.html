@@ -1,0 +1,66 @@
+
+<div id="header">
+    <button  mat-icon-button (click) = "sidenav.toggle()">
+        <mat-icon class="icon-color" color="primary">menu</mat-icon>
+    </button>
+    <app-menu-bar>
+        
+    </app-menu-bar>
+
+</div>
+
+<mat-sidenav-container >
+  
+  
+    <mat-sidenav #sidenav opened="true" mode="side"  >
+        
+        <mat-nav-list>
+            <div id="imgDiv">
+                <img id="imgSurvivor" src="../../../../assets/img/The-Last-Survivors-1.jpg" sizes="cover" alt="">
+              </div>
+            
+
+
+                <div class="flex-end">
+                <button class="button-sidebar" [routerLink]="''">
+                  <mat-icon>token</mat-icon>
+                  <mat-list-item role="listitem">Dashboard</mat-list-item>
+                
+                </button>
+                <button class="button-sidebar">
+                  <mat-icon>event</mat-icon>
+                  <mat-list-item role="listitem">Calendário</mat-list-item>
+                
+                </button>
+                <button class="button-sidebar" routerLink="/ecomerce">
+                  <mat-icon>local_convenience_store</mat-icon>
+                  <mat-list-item role="listitem">E-Comerce</mat-list-item>
+                </button>
+                <button class="button-sidebar">
+                  <mat-icon>school</mat-icon>
+                  <mat-list-item role="listitem">Academia</mat-list-item>
+                </button>
+                <button class="button-sidebar">
+                  <mat-icon>mail</mat-icon>
+                  <mat-list-item role="listitem">Email</mat-list-item>
+                </button>
+                <button class="button-sidebar">
+                  <mat-icon>chat_bubble</mat-icon>
+                  <mat-list-item role="listitem">Mensagens</mat-list-item>
+                </button>
+                
+                </div>
+              
+                
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style = "height: 88vh;">
+            <router-outlet>
+
+            </router-outlet>
+
+        </div>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
