@@ -1,19 +1,15 @@
-mat-sidenav-container{
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
 
-
-
-}
 mat-drawer{
 
     color: white;
     border: none;
     height: 100vh;
-    overflow: auto;
+
 
 
 
 }
+
 mat-drawer{
 
     width: 25%;
@@ -24,6 +20,7 @@ mat-drawer{
     display: flex;
     background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
 }
+
 .icon-color{
     color: #fff;
 }
@@ -52,6 +49,8 @@ mat-drawer{
   }
   mat-icon{
     color: #fff;
+    font-size: 100%;
+    margin-right: 10px;
   }
   .button-sidebar
   {
@@ -86,15 +85,15 @@ mat-drawer{
     padding: 5%;
     display: flex;
     align-content: center;
-    border-radius: 12px;
+
   }
   mat-list-item{
     font-family: fantasy;
     min-width: 80%;
     color: #fff;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 550;
-    border-left: #fff solid 2px;
+    border-left: #fff solid 1px;
     background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
   }
 
@@ -102,6 +101,7 @@ mat-drawer{
   .flex-end{
 
     margin-bottom: auto;
+    margin-top: 5%;
 
   }
   #imgDiv
@@ -117,6 +117,7 @@ mat-drawer{
   }
   #imgSurvivor{
     width: 60%;
+     max-width: 80%;
     object-fit: stretch;
     border-radius: 12px;
 

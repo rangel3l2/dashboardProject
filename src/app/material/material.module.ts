@@ -14,6 +14,12 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 import {CdkTableModule} from '@angular/cdk/table';
 import {MatMenuModule} from '@angular/material/menu';
+import { FormsModule } from '@angular/forms';
+
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+
+
 const COMPONENTS = [
   MatSliderModule,
   MatTableModule,
@@ -29,8 +35,9 @@ const COMPONENTS = [
   MatSidenavModule,
   MatCardModule,
   CdkTableModule,
-  MatMenuModule
- 
+  MatMenuModule,
+  FormsModule,
+
 
 
 
@@ -42,7 +49,7 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     COMPONENTS,
-    
+
   ],
   exports: [
     COMPONENTS,

@@ -15,6 +15,7 @@ import { EcomerceComponent } from './ecomerce/ecomerce.component';
 import { CalendaryComponent } from './calendary/calendary.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { ListSelectionComponent } from './dashboard/list-selection/list-selection.component';
 
 
 const COMPONENTS = [
@@ -28,9 +29,14 @@ const COMPONENTS = [
   TableDataComponent,
   BarChartComponent,
   EcomerceComponent,
+  CalendaryComponent,
+  ListSelectionComponent
+
+
+
 ]
 @NgModule({
-  declarations: [COMPONENTS, CalendaryComponent],
+  declarations: [COMPONENTS,],
   imports: [
     CommonModule,
     MaterialModule,
