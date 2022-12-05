@@ -1,5 +1,8 @@
 mat-sidenav-container{
   background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
+
+    height: 85vh;
+   
 }
 mat-sidenav{
     width: 25%;
@@ -65,7 +68,7 @@ mat-sidenav{
     border-radius: 10px;
     align-items: center;
     margin-bottom: 2%;
-    height: 15%;
+    
   
   
   }

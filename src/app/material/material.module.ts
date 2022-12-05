@@ -13,6 +13,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 import {CdkTableModule} from '@angular/cdk/table';
+import {MatMenuModule} from '@angular/material/menu';
 const COMPONENTS = [
   MatSliderModule,
   MatTableModule,
@@ -28,6 +29,7 @@ const COMPONENTS = [
   MatSidenavModule,
   MatCardModule,
   CdkTableModule,
+  MatMenuModule
  
 
 
