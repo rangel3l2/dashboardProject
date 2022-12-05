@@ -1,6 +1,6 @@
 
 <div id="header">
-    <button  mat-icon-button (click) = "sidenav.toggle()">
+    <button  mat-icon-button (click) = "drawer.toggle()">
         <mat-icon class="icon-color" color="primary">menu</mat-icon>
     </button>
     <app-menu-bar>
@@ -9,12 +9,12 @@
 
 </div>
 
-<mat-sidenav-container >
+<mat-drawer-container>
 
 
-    <mat-sidenav #sidenav opened="true" mode="side"  >
+    <mat-drawer #drawer opened="true" mode="side"    >
 
-        <mat-nav-list>
+        <mat-nav-list >
             <div id="imgDiv">
                 <img id="imgSurvivor" src="../../../../assets/img/The-Last-Survivors-1.jpg" sizes="cover" alt="">
               </div>
@@ -27,7 +27,7 @@
                   <mat-list-item role="listitem">Dashboard</mat-list-item>
 
                 </button>
-                <button class="button-sidebar">
+                <button class="button-sidebar" routerLink="/calendary">
                   <mat-icon>event</mat-icon>
                   <mat-list-item role="listitem">Calendário</mat-list-item>
 
@@ -53,8 +53,8 @@
 
 
         </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
+    </mat-drawer>
+    <mat-drawer-content>
         <div style = "height: 83vh;">
             <router-outlet>
 
@@ -62,5 +62,5 @@
 
         </div>
 
-    </mat-sidenav-content>
-</mat-sidenav-container>
+    </mat-drawer-content>
+</mat-drawer-container>

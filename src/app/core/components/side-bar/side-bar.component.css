@@ -1,13 +1,24 @@
 mat-sidenav-container{
   background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
 
-    height: 85vh;
-   
+
+
 }
-mat-sidenav{
+mat-drawer{
+
+    color: white;
+    border: none;
+    height: 100vh;
+    overflow: auto;
+
+
+
+}
+mat-drawer{
+
     width: 25%;
     background: linear-gradient(90deg, rgba(32,26,145,1) 2%, rgb(3, 3, 20) 100%, rgba(0,212,255,1) 100%);
-    
+
 }
 #header{
     display: flex;
@@ -17,27 +28,27 @@ mat-sidenav{
     color: #fff;
 }
 :host{
-   
+
     background-color: #FFFFFF;
     background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
-  
-  
+
+
     border-left-color: black;
     display: flex;
     flex-direction: column;
-  
+
   }
-  
+
   mat-list{
-  
+
 
     display: flex;
     flex-direction: column;
     height: 100%;
-    
-    
-  
-  
+
+
+
+
   }
   mat-icon{
     color: #fff;
@@ -47,14 +58,13 @@ mat-sidenav{
     display: flex;
     flex-direction: row;
     background-color: #000;
-    
+    margin-bottom: 2%;
     width: 100%;
     border-radius: 10px;
     align-items: center;
-    margin-bottom: 2%;
-    height: 15%;
-  
-  
+
+
+
   }
   .button-sidebar:hover
   {
@@ -63,14 +73,14 @@ mat-sidenav{
     flex-direction: row;
     background: linear-gradient(90deg, rgba(32,26,145,1) 2%, rgb(3, 3, 20) 100%, rgba(0,212,255,1) 100%);
     background: rgb(32,26,145);
-  
+
     width: 100%;
     border-radius: 10px;
     align-items: center;
-    margin-bottom: 2%;
-    
-  
-  
+
+
+
+
   }
   mat-icon{
     padding: 5%;
@@ -87,16 +97,16 @@ mat-sidenav{
     border-left: #fff solid 2px;
     background-image: linear-gradient(180deg, #FFFFFF 0%, #2750e3 50%, #190c0c 100%);
   }
-  
-  
+
+
   .flex-end{
-  
+
     margin-bottom: auto;
-  
+
   }
   #imgDiv
   {
-  
+
     width: 100%;
     background-color: black;
     display: flex;
@@ -106,12 +116,11 @@ mat-sidenav{
     height: auto;
   }
   #imgSurvivor{
-    width: 70%;
-    height: 90%;
+    width: 60%;
     object-fit: stretch;
     border-radius: 12px;
-  
+
   }
-  
+
 
 

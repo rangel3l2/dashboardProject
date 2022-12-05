@@ -3,6 +3,8 @@
     background: #222121;
     position: absolute;
     bottom: 0;
+    height: 8vh;
+    z-index: 1;
 
 
 }
@@ -11,9 +13,12 @@ footer{
     width: 100%;
     background-color: #222121;
     text-align: center;
-    height: 10vh;
     color: #fff;
     justify-content: center;
     align-items: flex-end;
+    align-content: flex-end;
 
+}
+footer p{
+  margin-top: 1%;
 }
